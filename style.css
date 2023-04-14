@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --cor1: #f45050;
+  --cor2: #f9d949;
+  --cor3: #f0f0f0;
+  --cor4: #3c486b;
+
+  --font: 'Roboto';
+  --fontDisplay: 'Lobster';
+}
+
+body {
+  background-color: var(--cor4);
+  font: 400 1.5rem var(--font);
+}
+
+h1 {
+  font: 700 4rem var(--fontDisplay);
+  color: var(--cor1);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.301);
+}
+
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.starter {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.mainCourse {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.sec1,
+.sec2 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 40%;
+  gap: 3rem;
+}
+
+.radio-container {
+  display: flex;
+  width: 33%;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--cor2);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.287);
+}
+
+.width {
+  width: 100%;
+}
+
+img {
+  width: 90%;
+  border-radius: 5px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.34));
+}
+
+.starters,
+.inputMain {
+  margin-bottom: 1rem;
+}
+
+label {
+  font: 700 1.5rem var(--font);
+  margin-top: 0.7rem;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.139);
+}
+
+.name > div > label {
+  font: 700 3rem var(--fontDisplay);
+  color: var(--cor1);
+}
+
+.inputsName {
+  border-radius: 8px;
+  border: transparent;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.311);
+  text-align: center;
+  font: 400 1.3rem var(--font);
+  color: var(--cor4);
+}
+
+.name > div {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: first baseline;
+  gap: 1rem;
+  text-align: center;
+}
+.name {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+h2 {
+  font: 700 3rem var(--fontDisplay);
+  color: var(--cor1);
+}
+
+.orderBtn {
+  margin: 1.5rem;
+  border: 1px solid var(--cor2);
+  font: 700 3.5rem var(--fontDisplay);
+  background-color: var(--cor1);
+  padding: 0.8rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.orderBtn:hover {
+  background-color: var(--cor2);
+  border: 1px solid var(--cor1);
+}
+
+.modal {
+  position: absolute;
+  background-color: var(--cor2);
+  width: 70vw;
+  height: 60vh;
+  z-index: 9;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  font: 400 1.5rem var(--font);
+  left: 15%;
+  top: -101%;
+  animation: modal 0.8s linear alternate forwards;
+}
+
+.headerModal {
+  font: 700 3rem var(--fontDisplay);
+  padding: 1rem;
+}
+
+.paragrafoModal {
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.focal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 162%;
+  background-color: rgba(0, 0, 0, 0.559);
+  backdrop-filter: blur(3px);
+  z-index: 8;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+@keyframes modal {
+  from {
+    top: -101%;
+  }
+  to {
+    top: 50%;
+  }
+}
