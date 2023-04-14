@@ -143,16 +143,16 @@ h2 {
 .modal {
   position: absolute;
   background-color: var(--cor2);
-  width: 70vw;
-  height: 60vh;
+  width: 50vw;
+  height: 40vh;
   z-index: 9;
   border-radius: 10px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   font: 400 1.5rem var(--font);
-  left: 15%;
+  left: 30%;
   top: -101%;
   animation: modal 0.8s linear alternate forwards;
 }
@@ -164,6 +164,8 @@ h2 {
 
 .paragrafoModal {
   color: black;
+  text-align: justify;
+  padding: 1rem;
 }
 
 .hidden {

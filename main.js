@@ -78,6 +78,7 @@ btn.addEventListener('click', function () {
       starterIndex: starterOrder,
       mainIndex: mainOrder,
     });
+    modalParagrafo.textContent = orders[orders.length - 1];
     modal.classList.remove('hidden');
     focal.classList.remove('hidden');
     inputText.classList.remove('error');
@@ -91,5 +92,4 @@ btn.addEventListener('click', function () {
 focal.addEventListener('click', function () {
   focal.classList.add('hidden');
   modal.classList.add('hidden');
-  modalParagrafo.textContent = orders[orders.length - 1];
 });
